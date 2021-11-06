@@ -1,3 +1,19 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://componentes/DropPoint.tscn" type="PackedScene" id=1]
+[ext_resource path="res://componentes/bin.tscn" type="PackedScene" id=2]
+[ext_resource path="res://componentes/Spawn.tscn" type="PackedScene" id=3]
 
 [node name="Main" type="Node2D"]
+
+[node name="DropPoint" parent="." instance=ExtResource( 1 )]
+position = Vector2( 194.411, 65.157 )
+
+[node name="DropPoint2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 192.822, 179.579 )
+
+[node name="spawn" parent="." instance=ExtResource( 3 )]
+position = Vector2( 56.1515, 157.86 )
+
+[node name="bin" parent="." instance=ExtResource( 2 )]
+position = Vector2( 365.515, 205.536 )
